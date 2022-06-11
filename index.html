@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="Sign up form for The Odin Project">
+    <meta name="keywords" content="the odin project, sign up, form">
+    <link rel="stylesheet" href="/style.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Sign up form</title>
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <header class="header__main">
+        <div class="title">
+          <h1>ODIN</h1>
+          <img src="img/odin-logo.png" alt="logo" class="logo">
+        </div>
+      </header>
+
+      <main>
+        <div class="headline__container">
+          <p class="headline">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+          Sign up <em>now</em> to get started.</p>
+          <p class="headline motivation-1">You <em>know</em> you want to.</p>
+          <p class="headline motivation-2">Let's do this!</p>
+        </div>
+
+        <form action="index.html" method="">
+          <div class="input__container">
+
+            <div class="input__box">
+              <label for="first-name" class="label__first-name">First Name</label>
+              <input type="text" id="first-name" class="input__first-name" required>
+            </div>
+
+            <div class="input__box">
+              <label for="last-name" class="label__last-name">Last Name</label>
+              <input type="text" id="last-name" class="input__last-name" required>
+            </div>
+
+            <div class="input__box">
+              <label for="email" class="label__email">Email</label>
+              <input type="email" id="email" class="input__email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            </div>
+
+            <div class="input__box">
+              <label for="phone" class="label__phone">Phone Number</label>
+              <input type="tel" id="phone" class="input__phone" pattern="[0-9]{6,12}" required>
+            </div>
+
+            <div class="input__box">
+              <label for="password-initial" class="label__password-initial" data-tooltip="test">Password</label>
+              <input type="password" id="password--initial" class="input__password" required>
+              <div class="tooltip tooltip--initial">
+                <span class="tooltip__header">Password must contain:</span>
+                <ul>
+                  <li class="tt-i--length">At least 8 characters</li>
+                  <li class="tt-i--number">A number</li>
+                  <li class="tt-i--lowercase">A lowercase letter</li>
+                  <li class="tt-i--uppercase">A uppercase letter</li>
+                  <li class="tt-i--character">A special character (!@#$%^)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="input__box">
+              <label for="password-confirm" class="label__password-confirm">Confirm Password</label>
+              <input type="password" id="password--confirm" class="input__password" required>
+              <div class="tooltip tooltip--confirm">
+                <span class="tooltip__header">Password must contain:</span>
+                <ul>
+                  <li class="tt-c--length">At least 8 characters</li>
+                  <li class="tt-c--number">A number</li>
+                  <li class="tt-c--lowercase">A lowercase letter</li>
+                  <li class="tt-c--uppercase">A uppercase letter</li>
+                  <li class="tt-c--character">A special character (!@#$%^)</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <input type="submit" class="button" name="button" value="Create Account">
+          <p class="button__subtitle">Already have an account? <a href="#" class="link--log-in">Log in</a></p>
+
+        </form>
+      </main>
+
+      <footer>
+        <small>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></small>
+      </footer>
+
+    </div>
+  </body>
+</html>
